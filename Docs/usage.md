@@ -35,7 +35,7 @@ while (...) {
 ```
 ```phase``` is the engine state between 0 and 1 representing the current position
 in the walking cycle. The variable is updated according to walk frequency and
-the time step ```dt```. 
+the time step ```dt``` (in seconds). 
 The walk engine returns ```false``` if given parameters lead to unreachable position
 for the inverse kinematics and ```phase``` is not updated.
 
@@ -56,8 +56,8 @@ outputs.right_ankle_roll
 ```
 
 The omnidirectional walking is achieved by mixing by these four parameters:
-* params.stepGain: Forward (X) footstep length (in meters)
-* params.lateralGain: Lateral (Y) footstep length (in meters)
-* params.turnGain: Footstep rotation angle (in radian)
-* params.enabledGain: Additional gain multiplying all oscillatory movements. The walk is stopped if set to 0 and fully enabled if set to 1.
+* ```params.stepGain```: Forward (X) footstep length (in meters)
+* ```params.lateralGain```: Lateral (Y) footstep length (in meters)
+* ```params.turnGain```: Footstep rotation angle (in radian)
+* ```params.enabledGain```: Additional gain multiplying all oscillatory movements. The walk is stopped if set to 0 and fully enabled if set to 1.
 
