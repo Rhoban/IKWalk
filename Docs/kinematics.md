@@ -24,7 +24,7 @@ The inverse kinematics returns false if the target position is not reachable.
 Rhoban::IKWalkOutputs outputs;
 Eigen::Vector3d posLeft(leftX, leftY, leftZ);
 Eigen::Vector3d angleLeft(leftPitch, leftRoll, leftYaw);
-//Run inverse invert kinematics on both legs
+//Run inverse invert kinematics on left leg
 //using Pitch-Roll-Yaw convention
 bool successLeft = model.legIkLeft(
     posLeft, angleLeft, Leph::EulerPitchRollYaw, outputs);
