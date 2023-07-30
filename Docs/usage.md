@@ -1,4 +1,4 @@
-# Walk Eigine Usage
+# Walk Engine Usage
 
 First include de header file:
 ```cpp
